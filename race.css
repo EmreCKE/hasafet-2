@@ -1,0 +1,57 @@
+/* Tablo Konteyneri */
+.race-table-container {
+    padding: 20px;
+    max-width: 100%;
+    overflow-x: auto; /* Yatay kaydırmayı etkinleştirir */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Tablo Başlık */
+.race-table-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Tablo Stilleri */
+.race-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px; /* Tablo minimum genişlik sağlar */
+    overflow-x: auto;
+}
+
+.race-table th, .race-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.race-table th {
+    background-color: #4CAF50; /* Başlık arka plan rengi */
+    color: white; /* Başlık yazı rengi */
+    font-weight: bold;
+}
+
+/* Zebra Deseni */
+.race-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Responsive Ayarlar */
+@media (max-width: 768px) {
+    .race-table-container {
+        padding: 10px;
+    }
+
+    .race-table th, .race-table td {
+        font-size: 12px; /* Daha küçük ekranlar için yazı boyutunu küçült */
+    }
+
+    .race-table-container h1 {
+        font-size: 18px; /* Başlık boyutunu küçült */
+    }
+}

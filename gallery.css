@@ -1,0 +1,102 @@
+
+
+/* Grid Yapısı */
+.gallery-page {
+    margin-top: 8rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.gallery-page-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    aspect-ratio: 1 / 1; /* Kare oranında kutular */
+}
+
+.gallery-page-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Resim kutuyu tamamen doldurur */
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery-page-item:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Ayarlar */
+@media (max-width: 1024px) { /* Tablet Ekranları */
+    .gallery-page {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) { /* Küçük Tablet ve Büyük Telefonlar */
+    .gallery-page {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) { /* Mobil Telefonlar */
+    .gallery-page {
+        grid-template-columns: repeat(2, 1fr); /* Daha küçük ekranlar için iki sütun */
+        gap: 8px;
+    }
+}
+
+/* Carousel */
+.gallery-page-carousel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    flex-direction: column;
+}
+
+.gallery-page-carousel.hidden {
+    display: none;
+}
+
+.gallery-page-carousel img {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 10px;
+    object-fit: contain; /* Carousel'de görüntüler orantılı kalır */
+}
+
+.gallery-page-carousel button {
+    position: absolute;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.gallery-page-carousel-close {
+    top: 20px;
+    right: 20px;
+}
+
+.gallery-page-carousel-prev {
+    left: 20px;
+}
+
+.gallery-page-carousel-next {
+    right: 20px;
+}
