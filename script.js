@@ -8,6 +8,12 @@ window.addEventListener('scroll', () => {
     }
 });
 
+const hamburgerMenu = document.getElementById('hamburger-menu');
+const navList = document.getElementById('nav-list');
+
+hamburgerMenu.addEventListener('click', () => {
+    navList.classList.toggle('show');
+});
 
 
 
@@ -17,6 +23,7 @@ const carouselImage = document.querySelector('.gallery-page-carousel-image');
 const closeBtn = document.querySelector('.gallery-page-carousel-close');
 const prevBtn = document.querySelector('.gallery-page-carousel-prev');
 const nextBtn = document.querySelector('.gallery-page-carousel-next');
+
 
 let currentIndex = 0;
 
@@ -55,3 +62,4 @@ carousel.addEventListener('click', (e) => {
         carousel.classList.add('hidden');
     }
 });
+

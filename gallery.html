@@ -8,20 +8,26 @@
     <link rel="stylesheet" href="gallery.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
 </head>
 <body>
-    <!-- Navbar -->
     <nav class="navbar page-navbar" id="navbar">
         <div class="navbar-container">
-            <a href="index.html" id="logo"><img src="img/logo.svg" alt="Hasafet Logo"></a>
-            <ul class="nav-list">
-                <li><a href="#">Hakkımızda</a></li>
-                <li><a href="#">Soyağacı</a></li>
+            <a href="index.html" id="logo"><img src="img/hasafetfit.svg" alt="Hasafet Logo"></a>
+            <div class="hamburger-menu" id="hamburger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-list" id="nav-list">
+                <li><a href="about.html">Hakkımızda</a></li>
+                <li><a href="about.html">Soyağacı</a></li>
                 <li><a href="gallery.html">Galeri</a></li>
                 <li><a href="#site-footer">İletişim</a></li>
             </ul>
         </div>
     </nav>
+
+
     <div class="container">
         <div class="gallery-page">
             <!-- Gallery Items -->
@@ -137,9 +143,6 @@
                 <img src="img/photo37.JPG" alt="Image 37">
             </div>
         </div>
-        
-    
-        <!-- Fullscreen Carousel -->
         <div class="gallery-page-carousel hidden">
             <button class="gallery-page-carousel-close">&times;</button>
             <button class="gallery-page-carousel-prev">&lt;</button>
@@ -148,7 +151,6 @@
         </div>
     </div>
    
-
     <footer id="site-footer">
         <div class="footer-container">
             <h3>İletişim</h3>
