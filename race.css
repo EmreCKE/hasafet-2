@@ -1,11 +1,20 @@
-/* Tablo Konteyneri */
+#races{
+    padding: 0 4rem;
+    margin-bottom: 2rem;
+}
+#races .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .race-table-container {
     padding: 20px;
     max-width: 100%;
     overflow-x: auto; /* Yatay kaydırmayı etkinleştirir */
     background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    margin: 1rem 0;
 }
 
 /* Tablo Başlık */
@@ -31,7 +40,7 @@
 }
 
 .race-table th {
-    background-color: #4CAF50; /* Başlık arka plan rengi */
+    background-color: #c3985b; /* Başlık arka plan rengi */
     color: white; /* Başlık yazı rengi */
     font-weight: bold;
 }
