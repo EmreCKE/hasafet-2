@@ -1,38 +1,46 @@
 /* Genel Stil */
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     font-family: 'Ubuntu', sans-serif;
     height: 100%;
 }
-a{
+
+a {
     text-decoration: none;
     color: #fff;
 }
+
 .container {
     max-width: 1100px;
     margin: auto;
     padding: 0 3rem;
     overflow: hidden;
 }
-.text-left{
+
+.text-left {
     text-align: left !important;
 }
 
 .btn {
     display: inline-block;
-    padding: 10px ; /* İç dolgu */
+    padding: 10px;
+    /* İç dolgu */
     margin: 0 30px;
-    font-size: 1rem; /* Yazı boyutu */
+    font-size: 1rem;
+    /* Yazı boyutu */
     text-align: center;
     text-decoration: none;
     border-radius: 30px;
     transition: all 0.3s ease;
     cursor: pointer;
-    width: 130px; /* Sabit genişlik */
-    height: 50px; /* Sabit yükseklik */
+    width: 130px;
+    /* Sabit genişlik */
+    height: 50px;
+    /* Sabit yükseklik */
     line-height: 30px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 /* Siyah Buton */
@@ -71,7 +79,8 @@ a{
     justify-content: center;
     color: #fff;
     text-align: center;
-    position: relative; /* Overlay için relative pozisyon */
+    position: relative;
+    /* Overlay için relative pozisyon */
     overflow: hidden;
 }
 
@@ -81,15 +90,19 @@ a{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.2); /* Overlay rengini ayarla */
-    z-index: 1; /* İçerikten daha üstte görünmesi için z-index */
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Overlay rengini ayarla */
+    z-index: 1;
+    /* İçerikten daha üstte görünmesi için z-index */
 }
 
 #landing .container {
-    position: relative; /* Overlay altında kalmaması için relative */
-    z-index: 2; /* Overlay'in üstünde görünmesi için z-index */
+    position: relative;
+    /* Overlay altında kalmaması için relative */
+    z-index: 2;
+    /* Overlay'in üstünde görünmesi için z-index */
     max-width: 700px;
-    
+
 }
 
 #landing-title {
@@ -97,50 +110,60 @@ a{
     margin-top: 7rem;
 }
 
-.landing-container p{
-    color:#ffffff;
+.landing-container p {
+    color: #ffffff;
 }
 
 
 .navbar {
-    position: absolute; /* Başlangıçta transparan ve absolute */
+    position: absolute;
+    /* Başlangıçta transparan ve absolute */
     top: 0;
     width: 100%;
     padding: 10px 10px;
-    background-color: rgba(0, 0, 0, 0); /* Transparan arka plan */
+    background-color: rgba(0, 0, 0, 0);
+    /* Transparan arka plan */
     z-index: 1000;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-    transition: background-color 0.5s ease, border-color 0.5s ease, position 0.5s ease; /* Yumuşak geçiş */
+    transition: background-color 0.5s ease, border-color 0.5s ease, position 0.5s ease;
+    /* Yumuşak geçiş */
 }
 
 .navbar.scrolled {
-    position: fixed; /* Kaydırınca sticky hale gelir */
-    background-color: rgba(50, 50, 50, 0.2); /* Arka plan rengi değişir */
+    position: fixed;
+    /* Kaydırınca sticky hale gelir */
+    background-color: rgba(50, 50, 50, 0.2);
+    /* Arka plan rengi değişir */
     border-bottom-color: rgba(255, 255, 255, 0.8);
 }
 
-.navbar.page-navbar{
-    background-color: rgba(0, 0, 0, 0.5); /* Transparan arka plan */
+.navbar.page-navbar {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Transparan arka plan */
 }
 
-#logo img{
+#logo img {
     height: 70px;
 }
-.navbar-container{
+
+.navbar-container {
     padding: 0 60px;
     display: flex;
     justify-content: space-between;
-    align-items:center
+    align-items: center
 }
-.nav-list{
+
+.nav-list {
     list-style: none;
     display: flex;
     align-items: center;
 }
-.nav-list li{
+
+.nav-list li {
     padding: 1rem;
 }
-.landing-btn-container{
+
+.landing-btn-container {
     margin-top: 60px;
 }
 
@@ -166,7 +189,8 @@ a{
 
 /* Görsel */
 .about-us-image {
-    flex: 1 1 50%; /* Yarı yarıya genişlik */
+    flex: 1 1 50%;
+    /* Yarı yarıya genişlik */
     text-align: center;
 }
 
@@ -185,11 +209,14 @@ a{
 
 .about-us-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* İki sütunlu düzen */
-    gap: 30px; /* Sütunlar arası boşluk */
+    grid-template-columns: repeat(2, 1fr);
+    /* İki sütunlu düzen */
+    gap: 30px;
+    /* Sütunlar arası boşluk */
     max-width: 1100px;
     margin: auto;
-    align-items: center; /* Dikey hizalama */
+    align-items: center;
+    /* Dikey hizalama */
 }
 
 /* Metin İçeriği */
@@ -220,20 +247,25 @@ a{
 
 .about-stats-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* İki sütun: Sol ve Sağ */
-    gap: 40px; /* Sütunlar arası boşluk */
-    align-items: center; /* Dikey hizalama */
+    grid-template-columns: 1fr 1fr;
+    /* İki sütun: Sol ve Sağ */
+    gap: 40px;
+    /* Sütunlar arası boşluk */
+    align-items: center;
+    /* Dikey hizalama */
     max-width: 1100px;
     margin: auto;
 }
-.about-page-container{
+
+.about-page-container {
     padding: 8rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.about-page-container p{
+
+.about-page-container p {
     line-height: 1.8;
 }
 
@@ -265,20 +297,20 @@ a{
 
 .stats-items {
     display: flex;
-    flex-direction: column; 
-    gap: 30px; 
+    flex-direction: column;
+    gap: 30px;
 }
 
 .stats-item {
     display: flex;
-    align-items: center; 
-    gap: 20px; 
+    align-items: center;
+    gap: 20px;
 }
 
 .stats-number {
     font-size: 3rem;
     font-weight: 700;
-    color: #c3985b; 
+    color: #c3985b;
     margin: 0;
 }
 
@@ -369,22 +401,26 @@ a{
 
 .nick-table-container {
     padding: 1rem;
-    overflow-x: auto; /* Yatay kaydırma */
+    overflow-x: auto;
+    /* Yatay kaydırma */
 }
 
 #nick-table {
     border-collapse: collapse;
     width: 100%;
-    min-width: 600px; /* Minimum genişlik */
-    table-layout: auto; /* Tablonun sütun genişlikleri otomatik ayarlanır */
+    min-width: 600px;
+    /* Minimum genişlik */
+    table-layout: auto;
+    /* Tablonun sütun genişlikleri otomatik ayarlanır */
 }
 
-#nick-table th, 
+#nick-table th,
 #nick-table td {
     border: 1px solid #000;
     text-align: center;
     padding: 8px;
-    font-size: 1rem; /* Varsayılan yazı boyutu */
+    font-size: 1rem;
+    /* Varsayılan yazı boyutu */
 }
 
 #nick-table th {
@@ -396,7 +432,8 @@ a{
     font-weight: bold;
     color: #f9a825;
 }
-.text-center{
+
+.text-center {
     text-align: center;
 }
 
@@ -418,8 +455,10 @@ a{
 
 .carousel-content {
     position: relative;
-    max-width: 90%; /* Carousel genişliği */
-    max-height: 90%; /* Carousel yüksekliği */
+    max-width: 90%;
+    /* Carousel genişliği */
+    max-height: 90%;
+    /* Carousel yüksekliği */
     text-align: center;
     overflow: hidden;
     display: flex;
@@ -429,41 +468,50 @@ a{
 
 .carousel img {
     display: block;
-    max-width: 100%; /* Görsel genişliği alanı aşmaz */
-    max-height: 100%; /* Görsel yüksekliği alanı aşmaz */
+    max-width: 100%;
+    /* Görsel genişliği alanı aşmaz */
+    max-height: 100%;
+    /* Görsel yüksekliği alanı aşmaz */
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Görsele gölge efekti */
-    object-fit: contain; /* Görsel oranını koruyarak alan içinde gösterilir */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    /* Görsele gölge efekti */
+    object-fit: contain;
+    /* Görsel oranını koruyarak alan içinde gösterilir */
 }
 
 
 /* Navigation Buttons */
-.prev-btn, .next-btn {
+.prev-btn,
+.next-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     background: rgba(255, 255, 255, 0.7);
     border: none;
     color: black;
-    font-size: 1.5rem; /* Daha küçük butonlar */
+    font-size: 1.5rem;
+    /* Daha küçük butonlar */
     padding: 8px;
     cursor: pointer;
     border-radius: 50%;
-    z-index: 1100; /* Görüntünün üstünde */
+    z-index: 1100;
+    /* Görüntünün üstünde */
 }
 
 .prev-btn {
-    left: 10px; /* Daha yakın konum */
+    left: 10px;
+    /* Daha yakın konum */
 }
 
 .next-btn {
-    right: 10px; /* Daha yakın konum */
+    right: 10px;
+    /* Daha yakın konum */
 }
 
 .close-btn {
     position: absolute;
-    top: 15px; 
-    right: 15px; 
+    top: 15px;
+    right: 15px;
     font-size: 2rem;
     color: white;
     cursor: pointer;
@@ -530,14 +578,15 @@ a{
 
 /* Hamburger Menü Stili */
 .hamburger-menu {
-    display: none; /* Masaüstünde gizli */
+    display: none;
+    /* Masaüstünde gizli */
     cursor: pointer;
     font-size: 24px;
     color: #ffffff;
     z-index: 1001;
 }
 
-/* Mobil Menüyü Gizle/Göster */ 
+/* Mobil Menüyü Gizle/Göster */
 .nav-list {
     display: flex;
     list-style: none;
@@ -546,7 +595,8 @@ a{
 }
 
 .nav-list.show {
-    display: flex; /* Menü göründüğünde */
+    display: flex;
+    /* Menü göründüğünde */
     flex-direction: column;
     position: absolute;
     top: 60px;
@@ -560,7 +610,8 @@ a{
 }
 
 .nav-list.show li {
-    padding: 10px 0; /* Mobilde daha rahat tıklama alanı */
+    padding: 10px 0;
+    /* Mobilde daha rahat tıklama alanı */
     text-align: center;
 }
 
@@ -568,23 +619,68 @@ a{
     color: #fff;
 }
 
+
+#pedigri{
+    padding: 1rem;
+    margin: 2rem 0 ;
+}
+#pedigri h1{
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+
+.scrollable-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Hover durumunda kaydırılabilir */
+.scrollable-image-container:hover img {
+    cursor: grab;
+}
+
+/* Kaydırma efekti */
+.scrollable-image-container {
+    overflow: auto; /* Hover sırasında taşan içerikleri kaydırılabilir yap */
+}
+
+
+
+
+
+
+
+
 @media (max-width: 768px) {
-    .nav-list {
-        display: none; 
-        flex-direction: column; 
+    #pedigri{
+     padding: 0.5rem;
+     margin: 1rem 0 ;
     }
-    #logo img{
+    #pedigri h1{
+        font-size: 1rem;
+        margin: 1rem 0;
+    }
+    .nav-list {
+        display: none;
+        flex-direction: column;
+    }
+
+    #logo img {
         height: 50px;
     }
-    .navbar-container{
+
+    .navbar-container {
         padding: 10px;
         display: flex;
         justify-content: space-between;
-        align-items:center;
+        align-items: center;
 
     }
+
     .hamburger-menu {
-        display:block;
+        display: block;
         padding-right: 20px;
     }
 
@@ -593,38 +689,41 @@ a{
     }
 
     .contact-info li {
-        font-size: 16px; 
+        font-size: 16px;
     }
 
-    .prev-btn, .next-btn {
+    .prev-btn,
+    .next-btn {
         font-size: 1.2rem;
         padding: 6px;
     }
 
     .close-btn {
-        font-size: 1.5rem; 
+        font-size: 1.5rem;
     }
 
     .carousel-content {
-        max-width: 95%; 
+        max-width: 95%;
         max-height: 85%;
     }
+
     .about-us-container {
-        grid-template-columns: 1fr; 
-        text-align: center; 
+        grid-template-columns: 1fr;
+        text-align: center;
     }
 
     .about-us-content {
-        margin-bottom: 20px; 
+        margin-bottom: 20px;
         text-align: center;
     }
 
     .about-us-image img {
-        max-width: 100%; 
+        max-width: 100%;
     }
+
     .about-stats-grid {
         grid-template-columns: 1fr;
-        text-align: center; 
+        text-align: center;
     }
 
     .stats-intro {
@@ -636,18 +735,22 @@ a{
         justify-content: center;
         flex-direction: column;
     }
+
     .events-carousel-item {
         flex-direction: column;
     }
-    .landing-btn-container{
+
+    .landing-btn-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .landing-btn-container a{
+
+    .landing-btn-container a {
         margin-top: 1.2rem;
     }
+
     .events-image img {
         width: 100%;
     }
@@ -668,22 +771,28 @@ a{
 
 
 @media (max-width: 480px) {
-    .prev-btn, .next-btn {
+
+    .prev-btn,
+    .next-btn {
         font-size: 1rem;
         padding: 4px;
     }
 
     .carousel img {
-        border-radius: 5px; /* Köşeleri daha az yuvarlat */
+        border-radius: 5px;
+        /* Köşeleri daha az yuvarlat */
     }
 
-    #nick-table th, 
+    #nick-table th,
     #nick-table td {
-        font-size: 0.8rem; /* Daha da küçültülmüş yazı boyutu */
-        padding: 5px; /* Daha az iç dolgu */
+        font-size: 0.8rem;
+        /* Daha da küçültülmüş yazı boyutu */
+        padding: 5px;
+        /* Daha az iç dolgu */
     }
 
     #nick-table {
-        min-width: 100%; /* Tablonun tam genişliği alması için */
+        min-width: 100%;
+        /* Tablonun tam genişliği alması için */
     }
 }
