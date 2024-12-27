@@ -52,8 +52,12 @@
 
 /* Responsive Ayarlar */
 @media (max-width: 768px) {
+    #races{
+        padding: 0 1rem;
+    }
     .race-table-container {
         padding: 10px;
+
     }
 
     .race-table th, .race-table td {

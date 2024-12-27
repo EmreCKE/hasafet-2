@@ -15,7 +15,9 @@ a{
     padding: 0 3rem;
     overflow: hidden;
 }
-
+.text-left{
+    text-align: left !important;
+}
 
 .btn {
     display: inline-block;
@@ -361,6 +363,43 @@ a{
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
+
+
+/* Nick Table */
+
+.nick-table-container {
+    padding: 1rem;
+    overflow-x: auto; /* Yatay kaydırma */
+}
+
+#nick-table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 600px; /* Minimum genişlik */
+    table-layout: auto; /* Tablonun sütun genişlikleri otomatik ayarlanır */
+}
+
+#nick-table th, 
+#nick-table td {
+    border: 1px solid #000;
+    text-align: center;
+    padding: 8px;
+    font-size: 1rem; /* Varsayılan yazı boyutu */
+}
+
+#nick-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+#nick-table td:nth-child(2) {
+    font-weight: bold;
+    color: #f9a825;
+}
+.text-center{
+    text-align: center;
+}
+
 /* Carousel */
 .carousel {
     display: none;
@@ -595,6 +634,7 @@ a{
     .stats-item {
         text-align: center;
         justify-content: center;
+        flex-direction: column;
     }
     .events-carousel-item {
         flex-direction: column;
@@ -622,6 +662,7 @@ a{
         right: 10px;
     }
 
+    #nick-table
 }
 
 
@@ -634,5 +675,15 @@ a{
 
     .carousel img {
         border-radius: 5px; /* Köşeleri daha az yuvarlat */
+    }
+
+    #nick-table th, 
+    #nick-table td {
+        font-size: 0.8rem; /* Daha da küçültülmüş yazı boyutu */
+        padding: 5px; /* Daha az iç dolgu */
+    }
+
+    #nick-table {
+        min-width: 100%; /* Tablonun tam genişliği alması için */
     }
 }
